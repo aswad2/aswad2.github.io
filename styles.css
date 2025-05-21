@@ -214,6 +214,7 @@ nav ul li a:hover {
     content: "✈️";  /* Traveling */
 }
 
+.hobby:nth-child(5) h2::before,
 .hobby-link:nth-child(5) .hobby h2::before {
     content: "🎧";  /* Music */
 }
@@ -497,5 +498,210 @@ nav ul li a:hover {
 
     .movie-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+/* Travel Page Styles */
+.travel-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.travel-section {
+    background: #2d2d2d;
+    border-radius: 12px;
+    padding: 40px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.travel-section h2 {
+    color: #e0e0e0;
+    font-size: 2em;
+    margin: 0 0 25px 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.travel-content {
+    display: flex;
+    gap: 30px;
+    align-items: start;
+}
+
+.travel-image {
+    flex: 0 0 40%;
+    position: relative;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-slide.active {
+    opacity: 1;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    z-index: 2;
+}
+
+.carousel-button {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    z-index: 2;
+}
+
+.carousel-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-dot.active {
+    background: white;
+}
+
+.destination-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.travel-text {
+    flex: 1;
+    text-align: left;
+}
+
+.travel-date {
+    color: #ba68c8;
+    font-size: 1.1em;
+    font-weight: 600;
+    margin: 0 0 15px 0;
+}
+
+.travel-description {
+    color: #b0b0b0;
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 0 0 20px 0;
+}
+
+.travel-highlights {
+    background: #363636;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.travel-highlights h3 {
+    color: #e0e0e0;
+    font-size: 1.2em;
+    margin: 0 0 15px 0;
+}
+
+.travel-highlights ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.travel-highlights li {
+    color: #b0b0b0;
+    font-size: 1em;
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.travel-highlights li:last-child {
+    margin-bottom: 0;
+}
+
+.travel-highlights li::before {
+    content: "•";
+    color: #ba68c8;
+    position: absolute;
+    left: 0;
+    font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+    .travel-section {
+        padding: 30px 20px;
+    }
+
+    .travel-content {
+        flex-direction: column;
+    }
+
+    .travel-image {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    .destination-image {
+        height: 250px;
+    }
+
+    .carousel-container {
+        height: 250px;
     }
 }
