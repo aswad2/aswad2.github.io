@@ -962,13 +962,6 @@ nav ul li a:hover {
     margin-left: 0;
 }
 
-/* Brand coloring for logos (optional, can be customized) */
-.exp-logo.openai i { color: #fff; background: #101010; border-radius: 8px; }
-.exp-logo.glean img { background: #fff; border-radius: 8px; }
-.exp-logo.stripe i { color: #635bff; background: #fff; border-radius: 8px; }
-.exp-logo.meta i { color: #1877f2; background: #fff; border-radius: 8px; }
-.exp-logo.yext img { background: #fff; border-radius: 8px; }
-
 @media (max-width: 900px) {
     .experience-item {
         flex-direction: column;
