@@ -39,13 +39,13 @@ export default function ExperienceList({ experiences, initialCount }: Experience
             <div className="exp-details">
               <div className="exp-header">
                 <h3 className="exp-company">{exp.company}</h3>
-                {exp.current && <span className="exp-badge">Current</span>}
+                <span className="exp-location">{exp.location}</span>
               </div>
               <p className="exp-role">{exp.role}</p>
               <div className="exp-meta">
                 <span className="exp-dates">{exp.dates}</span>
                 <span className="exp-separator">·</span>
-                <span className="exp-location">{exp.location}</span>
+                {exp.current && <span className="exp-badge">Current</span>}
               </div>
             </div>
           </li>

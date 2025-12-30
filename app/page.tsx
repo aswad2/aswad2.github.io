@@ -79,7 +79,6 @@ export default function Home() {
       <section className="hero hero-home">
         <header className="container hero-with-profile">
           <div className="hero-text">
-            <p className="intro-label animate-in">hello! i&apos;m</p>
             <h1 className="animate-in animate-in-delay-1">ashay swadi</h1>
             <p className="hero-subtitle animate-in animate-in-delay-2">
               software engineer @ coinbase
