@@ -5,25 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>my movies</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="hero">
-        <header>
-            <div class="container">
-                <h1>movies</h1>
-                <p class="tagline">my favorite films + ones i want to see.</p>
-            </div>
+    <nav>
+        <ul>
+            <li><a href="index.html"><span class="emoji">🏠</span> home</a></li>
+            <li><a href="hobbies.html"><span class="emoji">🎯</span> hobbies</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <header class="container">
+            <h1 class="animate-in">movies</h1>
+            <p class="tagline animate-in animate-in-delay-1">my favorite films + ones i want to see.</p>
         </header>
-        <nav>
-            <ul>
-                <li><a href="index.html"> <span class="emoji">&#127968;</span> home</a></li>
-                <li><a href="hobbies.html"> <span class="emoji">&#127936;</span> hobbies</a></li>
-            </ul>
-        </nav>
-    </div>
+    </section>
 
     <main class="movies-container">
-        <section class="movies-section">
+        <section class="movies-section animate-in animate-in-delay-2">
             <h2>🎬 my favorites</h2>
             <p>in no particular order :)</p>
             <div class="movie-grid">
@@ -48,10 +50,10 @@
             </div>
         </section>
 
-        <section class="movies-section">
+        <section class="movies-section animate-in animate-in-delay-3">
             <h2>📝 watchlist</h2>
+            <p>coming soon...</p>
             <div class="movie-grid">
-                
             </div>
         </section>
     </main>
