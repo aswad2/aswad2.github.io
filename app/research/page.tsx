@@ -3,7 +3,7 @@ import ResearchAnimation from "../components/ResearchAnimation";
 
 const navItems = [
   { href: "/", emoji: "🏠", label: "home" },
-  { href: "/files/resume.pdf", emoji: "📄", label: "resume", external: true },
+  { href: "../files/resume.pdf", emoji: "📄", label: "resume", external: true },
   { href: "/hobbies", emoji: "🎯", label: "hobbies" },
 ];
 
@@ -59,7 +59,7 @@ export default function Research() {
             check it out if you&apos;re interested ⬇️
           </p>
           <a
-            href="/files/thesis.pdf"
+            href="../files/thesis.pdf"
             className="thesis-link"
             target="_blank"
             rel="noopener noreferrer"

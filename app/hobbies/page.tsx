@@ -4,7 +4,7 @@ import HobbiesAnimation from "../components/HobbiesAnimation";
 
 const navItems = [
   { href: "/", emoji: "🏠", label: "home" },
-  { href: "/files/resume.pdf", emoji: "📄", label: "resume", external: true },
+  { href: "../files/resume.pdf", emoji: "📄", label: "resume", external: true },
   { href: "/research", emoji: "🔬", label: "research" },
 ];
 
