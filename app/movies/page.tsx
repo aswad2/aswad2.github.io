@@ -1,4 +1,5 @@
 import Navigation from "../components/Navigation";
+import MovieAnimation from "../components/MovieAnimation";
 
 const navItems = [
   { href: "/", emoji: "🏠", label: "home" },
@@ -32,13 +33,16 @@ export default function Movies() {
     <>
       <Navigation items={navItems} />
 
-      <section className="hero">
+      <section className="hero movies-hero">
         <header className="container">
           <h1 className="animate-in">movies</h1>
           <p className="tagline animate-in animate-in-delay-1">
             my favorite films + ones i want to see.
           </p>
         </header>
+        <div className="movies-animation-container">
+          <MovieAnimation />
+        </div>
       </section>
 
       <main className="movies-container">

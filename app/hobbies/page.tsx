@@ -29,15 +29,25 @@ export default function Hobbies() {
         <div className="hobby animate-in animate-in-delay-2">
           <h2>🎾 tennis</h2>
           <p>
-            i started playing junior year of college and i love it. working on
-            improving my backhand, serve, and footwork
+            i started playing junior year of college and i love it! i'm working on
+            improving my backhand, serve, and footwork.
+          </p>
+          <br />
+          <p className="gear">
+            🏸 <strong>current racket:</strong> Head Speed Pro
+          </p>
+          <p className="shoes">
+            👟 <strong>current shoes:</strong> Nike Vapor Pro 2
           </p>
         </div>
         <div className="hobby animate-in animate-in-delay-3">
           <h2>🏀 basketball</h2>
           <p>
-            catch me at greg gym or the san jac courts cooking up randoms. some
-            say i&apos;m indistinguishable from steph curry
+            some say i&apos;m indistinguishable from steph curry
+          </p>
+          <br />
+          <p className="shoes">
+            👟 <strong>current shoes:</strong> Boi-1da x Nike KD 15s
           </p>
         </div>
         <Link href="/movies" className="hobby-link animate-in animate-in-delay-4">
@@ -45,7 +55,7 @@ export default function Hobbies() {
             <h2>🎬 movies</h2>
             <p>
               i&apos;ve become an avid movie watcher (dare I say connoisseur) of
-              cinema since sophomore year. check out my favorite watches!
+              cinema since sophomore year. click this widget to check out my favorite watches!
             </p>
           </div>
         </Link>
@@ -54,7 +64,7 @@ export default function Hobbies() {
             <h2>✈️ travel</h2>
             <p>
               i love to travel and have been fortunate to have visited many
-              places around the world. see some recent travel pics here!
+              places around the world. click this widget to see some recent travel pics!
             </p>
           </div>
         </Link>

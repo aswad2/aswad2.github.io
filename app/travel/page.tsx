@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 import Navigation from "../components/Navigation";
+import TravelAnimation from "../components/TravelAnimation";
 
 const navItems = [
   { href: "/", emoji: "🏠", label: "home" },
@@ -83,13 +84,16 @@ export default function Travel() {
     <>
       <Navigation items={navItems} />
 
-      <section className="hero">
+      <section className="hero travel-hero">
         <header className="container">
           <h1 className="animate-in">travels</h1>
           <p className="tagline animate-in animate-in-delay-1">
-            cool places i&apos;ve gotten to visit.
+            cool places i&apos;ve visited.
           </p>
         </header>
+        <div className="travel-animation-container">
+          <TravelAnimation />
+        </div>
       </section>
 
       <main className="travel-container">

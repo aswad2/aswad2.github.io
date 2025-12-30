@@ -164,16 +164,7 @@ a {
 
 /* ===== Navigation ===== */
 nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
     padding: 16px 24px;
-    background: rgba(10, 10, 11, 0.8);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border-bottom: 1px solid var(--border);
     animation: fadeIn 0.6s var(--ease-out);
 }
 
@@ -319,14 +310,18 @@ nav ul li a .emoji {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 120px 24px 80px;
+    align-items: center;
+    text-align: center;
+    padding: 60px 24px 80px;
     position: relative;
     overflow: hidden;
 }
 
 .hero-home {
     min-height: 50vh;
-    padding: 140px 24px 60px;
+    padding: 60px 24px 60px;
+    align-items: center;
+    text-align: center;
 }
 
 .hero::before {
@@ -378,7 +373,7 @@ header h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 60px;
+    gap: 10%;
 }
 
 .hero-with-profile .hero-text {
@@ -816,11 +811,13 @@ header h1 {
 /* ===== Research Page ===== */
 .research-hero {
     position: relative;
+    align-items: flex-start;
+    text-align: left;
 }
 
 .research-animation-container {
     position: absolute;
-    right: 15%;
+    right: 20%;
     top: 50%;
     transform: translateY(-50%);
     opacity: 0.9;
@@ -829,11 +826,45 @@ header h1 {
 
 .hobbies-hero {
     position: relative;
+    align-items: flex-start;
+    text-align: left;
 }
 
 .hobbies-animation-container {
     position: absolute;
     right: 18%;
+    top: 45%;
+    transform: translateY(-50%);
+    opacity: 0.9;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.travel-hero {
+    position: relative;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.travel-animation-container {
+    position: absolute;
+    right: 20%;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.9;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.movies-hero {
+    position: relative;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.movies-animation-container {
+    position: absolute;
+    right: 26%;
     top: 50%;
     transform: translateY(-50%);
     opacity: 0.9;
@@ -843,7 +874,9 @@ header h1 {
 
 @media (max-width: 768px) {
     .research-animation-container,
-    .hobbies-animation-container {
+    .hobbies-animation-container,
+    .travel-animation-container,
+    .movies-animation-container {
         display: none;
     }
 }
