@@ -43,10 +43,14 @@ export default function Research() {
             the lab does some really cool work in understanding how language is
             represented in the brain; in other words, we aim to discover what
             exactly goes on in our brains when we hear, read, or think
-            something. my specific research task focused on{" "}
+            something. 
+            <br />
+            <br />
+            my specific research task focused on{" "}
             <strong>
               reconstructing speech audio from fMRI-recorded brain signals.
-            </strong>
+            </strong> the goal was to see if we could retrieve critial speech information, such as the speaker's gender or age as well as more abstract information like intonation and emotion,
+            just from brain activity (monitoring how the brain responded to speech)!
           </p>
         </section>
 
@@ -79,7 +83,7 @@ export default function Research() {
           </p>
           <ul>
             <li>
-              proposed a new dijkstra-based algorithm that optimized driving
+              i proposed a new dijkstra-based algorithm that optimized driving
               routes to reduce overall vehicular congestion while maximizing the
               number of deadlines met
             </li>
@@ -87,7 +91,7 @@ export default function Research() {
               measured a <span className="highlight">32% improvement</span> in
               total travel time across all vehicles and a{" "}
               <span className="highlight">12% reduction</span> in deadlines
-              missed
+              missed!
             </li>
             <li>
               submitted a work-in-progress research paper to the{" "}
